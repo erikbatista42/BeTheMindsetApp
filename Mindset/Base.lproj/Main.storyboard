@@ -175,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMK-dQ-eLD">
-                                <rect key="frame" x="20" y="350" width="560" height="100"/>
+                                <rect key="frame" x="20" y="64" width="560" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2sq-cg-LJe"/>
                                 </constraints>
@@ -183,32 +183,38 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-ek-OR8">
-                                <rect key="frame" x="20" y="470" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtJ-Mo-o7p">
-                                <rect key="frame" x="0.0" y="30" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="165" width="600" height="300"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="v9i-ec-8jV"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-ek-OR8">
+                                <rect key="frame" x="20" y="524" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1388202888" green="0.2715294137" blue="0.32563513170000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="oMK-dQ-eLD" firstAttribute="top" secondItem="KtJ-Mo-o7p" secondAttribute="bottom" constant="20" id="0rq-r7-puW"/>
+                            <constraint firstItem="S8B-bA-PqJ" firstAttribute="top" secondItem="mIF-ek-OR8" secondAttribute="bottom" constant="55" id="4IO-r6-Y5S"/>
                             <constraint firstItem="oMK-dQ-eLD" firstAttribute="leading" secondItem="gjD-53-SZi" secondAttribute="leading" constant="20" id="Pes-9M-gyL"/>
-                            <constraint firstItem="mIF-ek-OR8" firstAttribute="top" secondItem="oMK-dQ-eLD" secondAttribute="bottom" constant="20" id="Z3U-cl-Ugo"/>
+                            <constraint firstItem="oMK-dQ-eLD" firstAttribute="top" secondItem="60R-Yx-0Id" secondAttribute="bottom" id="ZOf-tb-uxQ"/>
                             <constraint firstAttribute="trailing" secondItem="mIF-ek-OR8" secondAttribute="trailing" constant="20" id="ifJ-ES-h3c"/>
                             <constraint firstItem="mIF-ek-OR8" firstAttribute="leading" secondItem="gjD-53-SZi" secondAttribute="leading" constant="20" id="lQ9-Ev-tvr"/>
                             <constraint firstItem="KtJ-Mo-o7p" firstAttribute="leading" secondItem="gjD-53-SZi" secondAttribute="leading" id="meF-bJ-mfP"/>
                             <constraint firstAttribute="trailing" secondItem="KtJ-Mo-o7p" secondAttribute="trailing" id="o1Y-OF-iRB"/>
-                            <constraint firstItem="KtJ-Mo-o7p" firstAttribute="top" secondItem="gjD-53-SZi" secondAttribute="top" constant="30" id="pt4-pw-ktl"/>
+                            <constraint firstItem="KtJ-Mo-o7p" firstAttribute="top" secondItem="gjD-53-SZi" secondAttribute="top" constant="165" id="pt4-pw-ktl"/>
                             <constraint firstAttribute="trailing" secondItem="oMK-dQ-eLD" secondAttribute="trailing" constant="20" id="uGy-M1-VeO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0rq-r7-puW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="mIF-ek-OR8" id="Avx-vJ-CM3"/>
