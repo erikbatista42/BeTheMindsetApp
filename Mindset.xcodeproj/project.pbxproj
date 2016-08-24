@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71D0A7C1D6E4EAD00DFB8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D0A7B1D6E4EAD00DFB8BE /* ViewController.swift */; };
 		E77ECA5F1D6BF38600661981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA5E1D6BF38600661981 /* AppDelegate.swift */; };
 		E77ECA641D6BF38600661981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77ECA621D6BF38600661981 /* Main.storyboard */; };
 		E77ECA661D6BF38600661981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77ECA651D6BF38600661981 /* Assets.xcassets */; };
@@ -15,11 +16,10 @@
 		E77ECA731D6C19AA00661981 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA721D6C19AA00661981 /* Video.swift */; };
 		E77ECA751D6C1A6F00661981 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA741D6C1A6F00661981 /* VideoModel.swift */; };
 		E77ECA791D6D30A400661981 /* videoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA781D6D30A400661981 /* videoInfoViewController.swift */; };
-		E792E14B1D6D4248001B20B3 /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E792E14A1D6D4248001B20B3 /* viewController.swift */; };
-		E792E14F1D6D42B8001B20B3 /* ViewController 20-49-10-172.swift in Sources */ = {isa = PBXBuildFile; fileRef = E792E14E1D6D42B8001B20B3 /* ViewController 20-49-10-172.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E71D0A7B1D6E4EAD00DFB8BE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E77ECA5B1D6BF38600661981 /* Mindset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77ECA5E1D6BF38600661981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77ECA631D6BF38600661981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,8 +30,6 @@
 		E77ECA721D6C19AA00661981 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		E77ECA741D6C1A6F00661981 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoModel.swift; path = ../VideoModel.swift; sourceTree = "<group>"; };
 		E77ECA781D6D30A400661981 /* videoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = videoInfoViewController.swift; path = ../videoInfoViewController.swift; sourceTree = "<group>"; };
-		E792E14A1D6D4248001B20B3 /* viewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = viewController.swift; path = ../viewController.swift; sourceTree = "<group>"; };
-		E792E14E1D6D42B8001B20B3 /* ViewController 20-49-10-172.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController 20-49-10-172.swift"; path = "../../../.Trash/ViewController 20-49-10-172.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				E77ECA5E1D6BF38600661981 /* AppDelegate.swift */,
-				E792E14E1D6D42B8001B20B3 /* ViewController 20-49-10-172.swift */,
+				E71D0A7B1D6E4EAD00DFB8BE /* ViewController.swift */,
 				E77ECA721D6C19AA00661981 /* Video.swift */,
 				E77ECA741D6C1A6F00661981 /* VideoModel.swift */,
 				E77ECA701D6C140E00661981 /* segueTableViewController.swift */,
 				E77ECA781D6D30A400661981 /* videoInfoViewController.swift */,
-				E792E14A1D6D4248001B20B3 /* viewController.swift */,
 				E77ECA621D6BF38600661981 /* Main.storyboard */,
 				E77ECA651D6BF38600661981 /* Assets.xcassets */,
 				E77ECA671D6BF38600661981 /* LaunchScreen.storyboard */,
@@ -151,11 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E792E14B1D6D4248001B20B3 /* viewController.swift in Sources */,
+				E71D0A7C1D6E4EAD00DFB8BE /* ViewController.swift in Sources */,
 				E77ECA731D6C19AA00661981 /* Video.swift in Sources */,
 				E77ECA711D6C140E00661981 /* segueTableViewController.swift in Sources */,
 				E77ECA751D6C1A6F00661981 /* VideoModel.swift in Sources */,
-				E792E14F1D6D42B8001B20B3 /* ViewController 20-49-10-172.swift in Sources */,
 				E77ECA5F1D6BF38600661981 /* AppDelegate.swift in Sources */,
 				E77ECA791D6D30A400661981 /* videoInfoViewController.swift in Sources */,
 			);
