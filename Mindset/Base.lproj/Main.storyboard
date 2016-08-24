@@ -122,9 +122,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Get Motivated" id="wxA-vn-CSR" colorLabel="IBBuiltInLabel-Orange">
-                        <barButtonItem key="rightBarButtonItem" style="done" id="N72-eB-Sge">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="N72-eB-Sge">
                             <button key="customView" opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zjK-a6-WPb">
-                                <rect key="frame" x="565" y="7" width="15" height="30"/>
+                                <rect key="frame" x="20" y="7" width="15" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <state key="normal" title="x">
