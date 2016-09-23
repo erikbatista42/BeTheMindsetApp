@@ -65,7 +65,7 @@ let video5 = Video()
         //asign properties
         video5.videoId = "g-jwWYX7Jlo"
         video5.videoTitle = "Dream"
-        video5.videoDescription = "For any of you watching just remember, the hardest part is believing in yourself﻿"
+        video5.videoDescription = "Just remember, the hardest part is believing in yourself﻿"
 
         
         //Append it into the videos array
