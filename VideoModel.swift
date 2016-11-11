@@ -25,7 +25,7 @@ let video2 = Video()
         
         //asign properties
         video2.videoId = "zCyB2DQFdA0"
-        video2.videoTitle = "How successful people think"
+        video2.videoTitle = "How Successful People Think"
         video2.videoDescription = "Dream Big. Set Goals. Take Action."
 
         
@@ -37,7 +37,7 @@ let video3 = Video()
         
         //asign properties
         video3.videoId = "oG-kWW4um0s"
-        video3.videoTitle = "The mindset behind sucess"
+        video3.videoTitle = "The Mindset Behind Success"
         video3.videoDescription = "To bring anything into your life, imagine that it's already there"
 
         
@@ -50,7 +50,7 @@ let video4 = Video()
         
         //asign properties
         video4.videoId = "mgmVOuLgFB0"
-        video4.videoTitle = "Why do we fall?"
+        video4.videoTitle = "Why Do We fall?"
         video4.videoDescription = "If you want something, go get it. Period."
 
         
@@ -76,7 +76,7 @@ let video6 = Video()
         
         //asign properties
         video6.videoId = "lsSC2vx7zFQ"
-        video6.videoTitle = "How bad do you want it?"
+        video6.videoTitle = "How Bad Do You Want It?"
         video6.videoDescription = "When you want to succeed as bad as you want to breathe, then you'll be successful"
 
         
@@ -112,7 +112,7 @@ let video9 = Video()
         //asign properties
         video9.videoId = "26U_seo0a1g"
         video9.videoTitle = "Unbroken"
-        video9.videoDescription = "Some of you right now, the reason you're not at your goals right now it's because you're just all about your feelings"
+        video9.videoDescription = "The reason you're not at your goals right now it's because you're just all about your feelings"
 
         
         //Append it into the videos array
