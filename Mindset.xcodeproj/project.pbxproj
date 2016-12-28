@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E71D0A7C1D6E4EAD00DFB8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D0A7B1D6E4EAD00DFB8BE /* ViewController.swift */; };
+		E76CAA4E1DDAA45E006244BC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76CAA4D1DDAA45E006244BC /* iAd.framework */; };
 		E77ECA5F1D6BF38600661981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA5E1D6BF38600661981 /* AppDelegate.swift */; };
 		E77ECA641D6BF38600661981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77ECA621D6BF38600661981 /* Main.storyboard */; };
 		E77ECA661D6BF38600661981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77ECA651D6BF38600661981 /* Assets.xcassets */; };
@@ -16,10 +17,15 @@
 		E77ECA731D6C19AA00661981 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA721D6C19AA00661981 /* Video.swift */; };
 		E77ECA751D6C1A6F00661981 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA741D6C1A6F00661981 /* VideoModel.swift */; };
 		E77ECA791D6D30A400661981 /* videoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA781D6D30A400661981 /* videoInfoViewController.swift */; };
+		F4582DEFB24D3AD4D87629B6 /* Pods_Mindset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB83383D30DEA5D828B38F85 /* Pods_Mindset.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46954E1FA600ED27D3A06AE4 /* Pods-Mindset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindset.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mindset/Pods-Mindset.release.xcconfig"; sourceTree = "<group>"; };
+		CB83383D30DEA5D828B38F85 /* Pods_Mindset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00D14BC561E3C38E00A022C /* Pods-Mindset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindset/Pods-Mindset.debug.xcconfig"; sourceTree = "<group>"; };
 		E71D0A7B1D6E4EAD00DFB8BE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E76CAA4D1DDAA45E006244BC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		E77ECA5B1D6BF38600661981 /* Mindset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77ECA5E1D6BF38600661981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77ECA631D6BF38600661981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76CAA4E1DDAA45E006244BC /* iAd.framework in Frameworks */,
+				F4582DEFB24D3AD4D87629B6 /* Pods_Mindset.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC59111957621E21029B09B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E00D14BC561E3C38E00A022C /* Pods-Mindset.debug.xcconfig */,
+				46954E1FA600ED27D3A06AE4 /* Pods-Mindset.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E76CAA4C1DDAA45E006244BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76CAA4D1DDAA45E006244BC /* iAd.framework */,
+				CB83383D30DEA5D828B38F85 /* Pods_Mindset.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E77ECA521D6BF38600661981 = {
 			isa = PBXGroup;
 			children = (
 				E77ECA5D1D6BF38600661981 /* Mindset */,
 				E77ECA5C1D6BF38600661981 /* Products */,
+				E76CAA4C1DDAA45E006244BC /* Frameworks */,
+				0FC59111957621E21029B09B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E77ECA6D1D6BF38600661981 /* Build configuration list for PBXNativeTarget "Mindset" */;
 			buildPhases = (
+				AE42CE66D825EC17C6FB5108 /* [CP] Check Pods Manifest.lock */,
 				E77ECA571D6BF38600661981 /* Sources */,
 				E77ECA581D6BF38600661981 /* Frameworks */,
 				E77ECA591D6BF38600661981 /* Resources */,
+				078AF107BAB22AACA0D87149 /* [CP] Embed Pods Frameworks */,
+				884DEC103A005F7614F9B533 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -103,7 +134,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = btm;
 				TargetAttributes = {
 					E77ECA5A1D6BF38600661981 = {
@@ -142,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078AF107BAB22AACA0D87149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mindset/Pods-Mindset-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884DEC103A005F7614F9B533 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mindset/Pods-Mindset-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE42CE66D825EC17C6FB5108 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E77ECA571D6BF38600661981 /* Sources */ = {
@@ -193,8 +272,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,8 +319,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,20 +341,23 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		E77ECA6E1D6BF38600661981 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00D14BC561E3C38E00A022C /* Pods-Mindset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RL292UUN9S;
 				INFOPLIST_FILE = Mindset/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bethemindset.Mindset;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.Mindset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -281,14 +367,16 @@
 		};
 		E77ECA6F1D6BF38600661981 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46954E1FA600ED27D3A06AE4 /* Pods-Mindset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RL292UUN9S;
 				INFOPLIST_FILE = Mindset/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bethemindset.Mindset;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.Mindset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
