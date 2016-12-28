@@ -115,7 +115,10 @@ let videoThumbnailUrlString = "https://i1.ytimg.com/vi/" + videos[indexPath.row]
         //change UINavigation Item Color
         self.navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
         
-self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.100, green: 0.20, blue: 0.30, alpha: 0.0)
+        //change text bar item color
+navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+        //Change bar tint color
+self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
 
         
         
