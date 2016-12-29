@@ -17,6 +17,7 @@
 		E77ECA731D6C19AA00661981 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA721D6C19AA00661981 /* Video.swift */; };
 		E77ECA751D6C1A6F00661981 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA741D6C1A6F00661981 /* VideoModel.swift */; };
 		E77ECA791D6D30A400661981 /* videoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECA781D6D30A400661981 /* videoInfoViewController.swift */; };
+		E78F40451E14747C00E7AF5A /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F40441E14747C00E7AF5A /* MessageComposer.swift */; };
 		F4582DEFB24D3AD4D87629B6 /* Pods_Mindset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB83383D30DEA5D828B38F85 /* Pods_Mindset.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		E77ECA721D6C19AA00661981 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		E77ECA741D6C1A6F00661981 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoModel.swift; path = ../VideoModel.swift; sourceTree = "<group>"; };
 		E77ECA781D6D30A400661981 /* videoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = videoInfoViewController.swift; path = ../videoInfoViewController.swift; sourceTree = "<group>"; };
+		E78F40441E14747C00E7AF5A /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				E77ECA5E1D6BF38600661981 /* AppDelegate.swift */,
 				E71D0A7B1D6E4EAD00DFB8BE /* ViewController.swift */,
+				E78F40441E14747C00E7AF5A /* MessageComposer.swift */,
 				E77ECA721D6C19AA00661981 /* Video.swift */,
 				E77ECA741D6C1A6F00661981 /* VideoModel.swift */,
 				E77ECA701D6C140E00661981 /* segueTableViewController.swift */,
@@ -229,6 +232,7 @@
 			files = (
 				E71D0A7C1D6E4EAD00DFB8BE /* ViewController.swift in Sources */,
 				E77ECA731D6C19AA00661981 /* Video.swift in Sources */,
+				E78F40451E14747C00E7AF5A /* MessageComposer.swift in Sources */,
 				E77ECA711D6C140E00661981 /* segueTableViewController.swift in Sources */,
 				E77ECA751D6C1A6F00661981 /* VideoModel.swift in Sources */,
 				E77ECA5F1D6BF38600661981 /* AppDelegate.swift in Sources */,

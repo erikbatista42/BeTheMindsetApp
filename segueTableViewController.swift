@@ -13,11 +13,14 @@ import UIKit
 class segueTableViewController: UITableViewController {
     
     
+    
     @IBAction func unwindButton(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
     
     
     var videos:[Video] = [Video]()
@@ -116,9 +119,9 @@ let videoThumbnailUrlString = "https://i1.ytimg.com/vi/" + videos[indexPath.row]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
         
         //change text bar item color
-navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
+navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         //Change bar tint color
-self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+//self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
 
         
         

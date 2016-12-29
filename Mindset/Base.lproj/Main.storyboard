@@ -40,14 +40,17 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt0-1d-ely">
-                                <rect key="frame" x="125" y="592" width="124" height="22"/>
+                                <rect key="frame" x="125.5" y="592" width="124" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="2Fy-pY-N0e"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Feedback? Contact us"/>
+                                <connections>
+                                    <action selector="contactUsButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ozk-Hz-TVo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bethemindset.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glr-QT-S3m">
-                                <rect key="frame" x="25" y="301" width="325" height="64"/>
+                                <rect key="frame" x="25" y="301.5" width="325" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="TXx-nZ-9Aq"/>
                                     <constraint firstAttribute="width" constant="325" id="hhK-Ui-NoK"/>
@@ -57,7 +60,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Motivated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0L-5O-Pcp">
-                                <rect key="frame" x="115" y="528" width="134" height="21"/>
+                                <rect key="frame" x="114.5" y="528" width="135" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="t94-lC-Wsp"/>
                                 </constraints>
@@ -83,6 +86,7 @@
                             <constraint firstItem="n0L-5O-Pcp" firstAttribute="trailing" secondItem="Gt0-1d-ely" secondAttribute="trailing" id="ygc-Sw-QJg"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <segue destination="BdI-Bt-ZmX" kind="show" identifier="segue" id="9VZ-Ng-jXS"/>
                     </connections>
@@ -96,7 +100,7 @@
             <objects>
                 <tableViewController id="GI3-31-Spg" customClass="segueTableViewController" customModule="Mindset" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="180" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pnm-le-PFE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1388202888" green="0.2715294137" blue="0.32563513170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,20 +168,24 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="jne-ok-Ecz" kind="show" identifier="goToInfo" id="RyT-IM-fu5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmS-kt-ULG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.79999999999995" y="314.39280359820094"/>
+            <point key="canvasLocation" x="961" y="325"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HZQ-vA-ohI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BdI-Bt-ZmX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WyG-hR-eac">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="WyG-hR-eac">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -199,7 +207,7 @@
                         <viewControllerLayoutGuide type="bottom" id="S8B-bA-PqJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gjD-53-SZi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMK-dQ-eLD">
@@ -208,7 +216,7 @@
                                     <constraint firstAttribute="height" constant="100" id="2sq-cg-LJe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="35"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtJ-Mo-o7p">
@@ -219,13 +227,13 @@
                                 </constraints>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-ek-OR8">
-                                <rect key="frame" x="20" y="632" width="335" height="0.0"/>
+                                <rect key="frame" x="20" y="519" width="335" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.1388202888" green="0.2715294137" blue="0.32563513170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oMK-dQ-eLD" firstAttribute="top" secondItem="KtJ-Mo-o7p" secondAttribute="bottom" constant="20" id="0rq-r7-puW"/>
                             <constraint firstItem="S8B-bA-PqJ" firstAttribute="top" secondItem="mIF-ek-OR8" secondAttribute="bottom" constant="35" id="4IO-r6-Y5S"/>
@@ -244,6 +252,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="mIF-ek-OR8" id="Avx-vJ-CM3"/>
                         <outlet property="titleLabel" destination="oMK-dQ-eLD" id="s28-rU-gUR"/>
