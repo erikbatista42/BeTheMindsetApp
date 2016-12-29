@@ -118,18 +118,60 @@ let video9 = Video()
         //Append it into the videos array
         videos.append(video9)
         
-    
 let video10 = Video()
         
         //asign properties
-        video10.videoId = "fviFNrWKzZ8"
-        video10.videoTitle = "Mindshift"
-        video10.videoDescription = "If you want something, you have got to be relentless"
-
+        video10.videoId = "V2EfL1j4KYE"
+        video10.videoTitle = "Muhammad Ali"
+        video10.videoDescription = "Ima show you how great I am!"
+        
         
         //Append it into the videos array
         videos.append(video10)
 
+let video11 = Video()
+        
+        //asign properties
+        video11.videoId = "wzhzkKccBi8"
+        video11.videoTitle = "Be phenomenal "
+        video11.videoDescription = "Be phenomenal or be forgotten"
+        
+        
+        //Append it into the videos array
+        videos.append(video11)
+        
+let video12 = Video()
+        
+        //asign properties
+        video12.videoId = "fviFNrWKzZ8"
+        video12.videoTitle = "Mindshift"
+        video12.videoDescription = "If you want something, you have got to be relentless"
+
+        
+        //Append it into the videos array
+        videos.append(video12)
+
+let video13 = Video()
+        
+        //asign properties
+        video13.videoId = "tt4jRorzyT4"
+        video13.videoTitle = "STOP asking for easy."
+        video13.videoDescription = "#besomebody"
+        
+        
+        //Append it into the videos array
+        videos.append(video13)
+
+let video14 = Video()
+        
+        //asign properties
+        video14.videoId = "Rm4OT_DraUs"
+        video14.videoTitle = "Who's on YOUR team?"
+        video14.videoDescription = "#besomebody"
+        
+        
+        //Append it into the videos array
+        videos.append(video14)
 
         
         
