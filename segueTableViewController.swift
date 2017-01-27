@@ -36,6 +36,9 @@ class segueTableViewController: UITableViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -115,14 +118,7 @@ let videoThumbnailUrlString = "https://i1.ytimg.com/vi/" + videos[indexPath.row]
         
 }
         
-        //change UINavigation Item Color
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
-        
-        //change text bar item color
-navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        //Change bar tint color
-//self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
-
+       
         
         
         
