@@ -36,9 +36,9 @@ class segueTableViewController: UITableViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
-        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 29/255, green: 36/255, blue: 50/255, alpha: 1)
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor(),NSFontAttributeName: UIFont(name: "Avenir", size: 21)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),NSFontAttributeName: UIFont(name: "Avenir", size: 21)!]
     }
     
     override func didReceiveMemoryWarning() {
