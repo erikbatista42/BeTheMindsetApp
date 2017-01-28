@@ -133,7 +133,7 @@ let video11 = Video()
         
         //asign properties
         video11.videoId = "wzhzkKccBi8"
-        video11.videoTitle = "Be phenomenal "
+        video11.videoTitle = "Be Phenomenal "
         video11.videoDescription = "Be phenomenal or be forgotten"
         
         
