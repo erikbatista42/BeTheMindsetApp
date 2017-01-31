@@ -22,12 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bethemindset.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glr-QT-S3m">
-                                <rect key="frame" x="16" y="321" width="343" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Either you run the day, or the day runs you&quot; - Jim Rohn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glr-QT-S3m">
+                                <rect key="frame" x="16" y="312" width="343" height="87"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27.5" id="hUE-6j-Ks6"/>
+                                    <constraint firstAttribute="height" constant="87" id="hUE-6j-Ks6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
                                 <color key="textColor" red="0.01911348291" green="0.62454628940000001" blue="0.96102648970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,7 +62,7 @@
                         <color key="backgroundColor" red="0.097112514080000004" green="0.1206177101" blue="0.17043328290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qC3-yz-afy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="168.5" id="28K-RH-VWm"/>
-                            <constraint firstItem="glr-QT-S3m" firstAttribute="top" secondItem="uX5-bb-ijG" secondAttribute="bottom" constant="54" id="8xp-UE-7q9"/>
+                            <constraint firstItem="glr-QT-S3m" firstAttribute="top" secondItem="uX5-bb-ijG" secondAttribute="bottom" constant="45" id="8xp-UE-7q9"/>
                             <constraint firstItem="uX5-bb-ijG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Daa-2L-w6D"/>
                             <constraint firstItem="uX5-bb-ijG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="EK5-VW-KT0"/>
                             <constraint firstItem="glr-QT-S3m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F06-Zb-Yjb"/>
@@ -198,7 +198,7 @@
                         <viewControllerLayoutGuide type="top" id="60R-Yx-0Id"/>
                         <viewControllerLayoutGuide type="bottom" id="S8B-bA-PqJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="gjD-53-SZi">
+                    <view key="view" contentMode="scaleToFill" id="gjD-53-SZi">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -219,7 +219,7 @@
                                 </constraints>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-ek-OR8">
-                                <rect key="frame" x="20" y="588" width="335" height="0.0"/>
+                                <rect key="frame" x="20" y="524" width="335" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
