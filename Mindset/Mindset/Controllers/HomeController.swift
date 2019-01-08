@@ -31,6 +31,10 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+    
     let list = ["erik", "bob", "ben","mel"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
