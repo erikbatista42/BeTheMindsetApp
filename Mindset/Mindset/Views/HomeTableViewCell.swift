@@ -19,9 +19,16 @@ class HomeTableViewCell: UITableViewCell {
     
     let titleBackgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
+    }()
+    
+    let title: UILabel = {
+        let label = UILabel()
+        label.text = "this is the video title"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        return label
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -39,7 +46,11 @@ class HomeTableViewCell: UITableViewCell {
         titleBackgroundView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
         titleBackgroundView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
-        
+        addSubview(title)
+        title.topAnchor.constraint(equalTo: titleBackgroundView.topAnchor, constant: 0).isActive = true
+        title.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
+        title.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        title.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

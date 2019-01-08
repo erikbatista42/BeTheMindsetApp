@@ -12,6 +12,7 @@
 		FE0A701321E45ECE0080BF8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0A701121E45ECE0080BF8F /* LaunchScreen.storyboard */; };
 		FE0A701E21E463920080BF8F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A701D21E463910080BF8F /* HomeController.swift */; };
 		FE0A702221E53AA50080BF8F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */; };
+		FE0A702721E544A50080BF8F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702621E544A50080BF8F /* RGB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FE0A701421E45ECE0080BF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE0A701D21E463910080BF8F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		FE0A702621E544A50080BF8F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FE0A701C21E462C60080BF8F /* Controllers */,
 				FE0A701B21E462C10080BF8F /* Views */,
 				FE0A701F21E4715B0080BF8F /* System */,
+				FE0A702521E544800080BF8F /* Extensions */,
 			);
 			path = Mindset;
 			sourceTree = "<group>";
@@ -102,6 +105,14 @@
 				FE0A700821E45ECC0080BF8F /* AppDelegate.swift */,
 			);
 			path = Singletons;
+			sourceTree = "<group>";
+		};
+		FE0A702521E544800080BF8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE0A702621E544A50080BF8F /* RGB.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				FE0A702221E53AA50080BF8F /* HomeTableViewCell.swift in Sources */,
 				FE0A701E21E463920080BF8F /* HomeController.swift in Sources */,
 				FE0A700921E45ECC0080BF8F /* AppDelegate.swift in Sources */,
+				FE0A702721E544A50080BF8F /* RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
