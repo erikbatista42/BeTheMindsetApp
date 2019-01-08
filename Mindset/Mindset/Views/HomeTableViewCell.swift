@@ -19,6 +19,7 @@ class HomeTableViewCell: UITableViewCell {
     
     let titleBackgroundView: UIView = {
         let view = UIView()
+        view.backgroundColor = UIColor(white: 0, alpha: 0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
