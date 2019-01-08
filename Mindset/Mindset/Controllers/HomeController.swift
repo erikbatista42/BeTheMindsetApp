@@ -16,7 +16,7 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "BTM"
         view.backgroundColor = .white
         
         navigationController?.navigationBar.barStyle = UIBarStyle.black
@@ -26,9 +26,8 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView?.register(HomeTableViewCell.self, forCellReuseIdentifier: cellId)
         tableView?.delegate = self
         tableView?.dataSource = self
-        self.title = "BTM"
         view.addSubview(tableView!)
-        
+        tableView?.separatorStyle = .none
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
