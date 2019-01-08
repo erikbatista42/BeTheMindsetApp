@@ -13,6 +13,8 @@ class HomeTableViewCell: UITableViewCell {
     let thumbnail: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        iv.image = UIImage(named: "sampleImg.png")
+        iv.contentMode = .scaleAspectFill
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
@@ -26,7 +28,8 @@ class HomeTableViewCell: UITableViewCell {
     
     let title: UILabel = {
         let label = UILabel()
-        label.text = "this is the video title"
+        label.text = "This is the video title. Sometimes, it can be a very very long title!"
+        label.numberOfLines = 2
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         return label
@@ -50,7 +53,7 @@ class HomeTableViewCell: UITableViewCell {
         addSubview(title)
         title.topAnchor.constraint(equalTo: titleBackgroundView.topAnchor, constant: 0).isActive = true
         title.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
-        title.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        title.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true
         title.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
     }
     

@@ -17,17 +17,16 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "BTM"
-        view.backgroundColor = .white
-        
         navigationController?.navigationBar.barStyle = UIBarStyle.black
-
         
         tableView = UITableView(frame: view.frame)
         tableView?.register(HomeTableViewCell.self, forCellReuseIdentifier: cellId)
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
+        tableView?.backgroundColor = .black
         tableView?.separatorStyle = .none
+        tableView?.showsVerticalScrollIndicator = false
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
