@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class videoModel: NSObject {
     
     func getVideos() -> [Video] {

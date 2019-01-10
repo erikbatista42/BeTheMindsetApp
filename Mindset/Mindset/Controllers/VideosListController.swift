@@ -43,11 +43,20 @@ class VideosListController: UIViewController {
         let navBar = navigationController?.navigationBar
         navBar?.isTranslucent = false
         navBar?.barStyle = UIBarStyle.black
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "gear.png")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleOptionsButton))
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAddVideoButton))
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        
+    }
+    
+    @objc func handleOptionsButton() {
+        print("options button pressed")
     }
     
     @objc func handleAddVideoButton() {
-        navigationController?.present(ViewVideoController(), animated: true, completion: nil)
+        print("add video button pressed")
     }
     
     
