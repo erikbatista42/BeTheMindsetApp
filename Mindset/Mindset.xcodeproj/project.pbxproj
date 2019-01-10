@@ -10,12 +10,12 @@
 		FE0A700921E45ECC0080BF8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A700821E45ECC0080BF8F /* AppDelegate.swift */; };
 		FE0A701021E45ECE0080BF8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0A700F21E45ECE0080BF8F /* Assets.xcassets */; };
 		FE0A701321E45ECE0080BF8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0A701121E45ECE0080BF8F /* LaunchScreen.storyboard */; };
-		FE0A701E21E463920080BF8F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A701D21E463910080BF8F /* HomeController.swift */; };
-		FE0A702221E53AA50080BF8F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */; };
+		FE0A701E21E463920080BF8F /* VideosListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A701D21E463910080BF8F /* VideosListController.swift */; };
 		FE0A702721E544A50080BF8F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702621E544A50080BF8F /* RGB.swift */; };
 		FE0A702921E5540C0080BF8F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702821E5540C0080BF8F /* Video.swift */; };
 		FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702A21E555730080BF8F /* VideoModel.swift */; };
 		FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */; };
+		FE0A702F21E6E8740080BF8F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		FE0A700F21E45ECE0080BF8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0A701221E45ECE0080BF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE0A701421E45ECE0080BF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE0A701D21E463910080BF8F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		FE0A701D21E463910080BF8F /* VideosListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListController.swift; sourceTree = "<group>"; };
 		FE0A702621E544A50080BF8F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 		FE0A702821E5540C0080BF8F /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		FE0A702A21E555730080BF8F /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVideoController.swift; sourceTree = "<group>"; };
+		FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		FE0A701B21E462C10080BF8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */,
+				FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 		FE0A701C21E462C60080BF8F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FE0A701D21E463910080BF8F /* HomeController.swift */,
+				FE0A701D21E463910080BF8F /* VideosListController.swift */,
 				FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */,
 			);
 			path = Controllers;
@@ -194,10 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0A702F21E6E8740080BF8F /* HomeCollectionViewCell.swift in Sources */,
 				FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */,
-				FE0A702221E53AA50080BF8F /* HomeTableViewCell.swift in Sources */,
 				FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */,
-				FE0A701E21E463920080BF8F /* HomeController.swift in Sources */,
+				FE0A701E21E463920080BF8F /* VideosListController.swift in Sources */,
 				FE0A700921E45ECC0080BF8F /* AppDelegate.swift in Sources */,
 				FE0A702721E544A50080BF8F /* RGB.swift in Sources */,
 				FE0A702921E5540C0080BF8F /* Video.swift in Sources */,

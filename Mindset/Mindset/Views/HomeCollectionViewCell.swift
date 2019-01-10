@@ -1,20 +1,20 @@
 //
-//  HomeTableViewCell.swift
+//  HomeCollectionViewCell.swift
 //  Mindset
 //
-//  Created by luxury on 1/8/19.
+//  Created by luxury on 1/9/19.
 //  Copyright © 2019 luxury. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
     let thumbnail: UIImageView = {
         let iv = UIImageView()
-        iv.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
         iv.image = UIImage(named: "sampleImg.png")
-        iv.contentMode = .scaleAspectFill
+        iv.contentMode = .scaleAspectFit
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
@@ -49,7 +49,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         titleBackgroundView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
         titleBackgroundView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
         titleBackgroundView.heightAnchor.constraint(equalToConstant: 55).isActive = true
-
+        
         addSubview(title)
         title.topAnchor.constraint(equalTo: titleBackgroundView.topAnchor, constant: 0).isActive = true
         title.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true

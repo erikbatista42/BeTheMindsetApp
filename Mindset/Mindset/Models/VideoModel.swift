@@ -11,31 +11,31 @@ class videoModel: NSObject {
     
     func getVideos() -> [Video] {
         
-        // Empty array of videos
         var videos = [Video]()
         
-        // video object
-        var vidOne = Video()
+        var videoOne = Video()
+        videoOne.id = "ZOy0YgUDwDg"
+        videoOne.title = "Vision"
+        videoOne.description = "If you quit, no day will ever be your day"
+        videos.append(videoOne)
         
-        // assign properties
-        vidOne.id = "ZOy0YgUDwDg"
-        vidOne.title = "Vision"
-        vidOne.description = "If you quit, no day will ever be your day"
+        var videoTwo = Video()
+        videoTwo.id = "FhzNSPiqO0M"
+        videoTwo.title = "Lost But Won"
+        videoTwo.description = "Forget about your past. Make the rest of your life the best of your life"
+        videos.append(videoTwo)
         
-        // add vid one to videos array
-        videos.append(vidOne)
+        var videoThree = Video()
+        videoThree.id = "mgmVOuLgFB0"
+        videoThree.title = "Why do we fall?"
+        videoThree.description = "If you want something, go get it. Period."
+        videos.append(videoThree)
         
-        
-        // video object
-        var vidTwo = Video()
-        
-        // assign properties
-        vidTwo.id = "FhzNSPiqO0M"
-        vidTwo.title = "Lost But Won"
-        vidTwo.description = "Forget about your past. Make the rest of your life the best of your life"
-        
-        // add vid one to videos array
-        videos.append(vidTwo)
+        var videoFive = Video()
+        videoFive.id = "g-jwWYX7Jlo"
+        videoFive.title = "Dream"
+        videoFive.description = "Just remember, the hardest part is believing in yourself﻿"
+        videos.append(videoFive)
         
         
         return videos
