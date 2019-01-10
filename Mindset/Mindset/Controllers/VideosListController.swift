@@ -29,7 +29,9 @@ class VideosListController: UIViewController {
     }
     
     func setupCollectionView() {
-        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: (view.frame.height) - 62)
+        collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
+        
         collectionView?.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.delegate = self
         collectionView?.dataSource = self
