@@ -48,7 +48,7 @@ class HomeTableViewCell: UITableViewCell {
         titleBackgroundView.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
         titleBackgroundView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
         titleBackgroundView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
-        titleBackgroundView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        titleBackgroundView.heightAnchor.constraint(equalToConstant: 55).isActive = true
         
         addSubview(title)
         title.topAnchor.constraint(equalTo: titleBackgroundView.topAnchor, constant: 0).isActive = true

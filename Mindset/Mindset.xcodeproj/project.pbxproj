@@ -13,6 +13,9 @@
 		FE0A701E21E463920080BF8F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A701D21E463910080BF8F /* HomeController.swift */; };
 		FE0A702221E53AA50080BF8F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */; };
 		FE0A702721E544A50080BF8F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702621E544A50080BF8F /* RGB.swift */; };
+		FE0A702921E5540C0080BF8F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702821E5540C0080BF8F /* Video.swift */; };
+		FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702A21E555730080BF8F /* VideoModel.swift */; };
+		FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FE0A701D21E463910080BF8F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FE0A702121E53AA50080BF8F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		FE0A702621E544A50080BF8F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		FE0A702821E5540C0080BF8F /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		FE0A702A21E555730080BF8F /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 		FE0A701A21E462B60080BF8F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FE0A702821E5540C0080BF8F /* Video.swift */,
+				FE0A702A21E555730080BF8F /* VideoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FE0A701D21E463910080BF8F /* HomeController.swift */,
+				FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,10 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */,
 				FE0A702221E53AA50080BF8F /* HomeTableViewCell.swift in Sources */,
+				FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */,
 				FE0A701E21E463920080BF8F /* HomeController.swift in Sources */,
 				FE0A700921E45ECC0080BF8F /* AppDelegate.swift in Sources */,
 				FE0A702721E544A50080BF8F /* RGB.swift in Sources */,
+				FE0A702921E5540C0080BF8F /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
