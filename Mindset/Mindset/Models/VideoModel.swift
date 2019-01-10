@@ -37,6 +37,23 @@ class videoModel: NSObject {
         videoFive.description = "Just remember, the hardest part is believing in yourself﻿"
         videos.append(videoFive)
         
+        var videoSix = Video()
+        videoSix.id = "t8ApMdi24LI"
+        videoSix.title = "I CAN DO IT"
+        videoSix.description = "Failure & Fear should be your best friends"
+        videos.append(videoSix)
+        
+        var videoSeven = Video()
+        videoSeven.id = "26U_seo0a1g"
+        videoSeven.title = "Unbroken"
+        videoSeven.description = "The people who are crazy enough to think they can change the world are the ones who do"
+        videos.append(videoSeven)
+
+        var videoEight = Video()
+        videoEight.id = "uMJ5Zwfz1pU"
+        videoEight.title = "Never Give up"
+        videoEight.description = "If you don't do it nothing is possible. If you try to do it at least you have the hope"
+        videos.append(videoEight)
         
         return videos
     }
