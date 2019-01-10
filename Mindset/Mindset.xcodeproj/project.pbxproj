@@ -16,6 +16,7 @@
 		FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702A21E555730080BF8F /* VideoModel.swift */; };
 		FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */; };
 		FE0A702F21E6E8740080BF8F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */; };
+		FE0A703121E80BF10080BF8F /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A703021E80BF10080BF8F /* MessageComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FE0A702A21E555730080BF8F /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVideoController.swift; sourceTree = "<group>"; };
 		FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE0A703021E80BF10080BF8F /* MessageComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,7 @@
 				FE0A701C21E462C60080BF8F /* Controllers */,
 				FE0A701B21E462C10080BF8F /* Views */,
 				FE0A701F21E4715B0080BF8F /* System */,
-				FE0A702521E544800080BF8F /* Extensions */,
+				FE0A703221E80C440080BF8F /* Helpers */,
 			);
 			path = Mindset;
 			sourceTree = "<group>";
@@ -122,6 +124,15 @@
 				FE0A702621E544A50080BF8F /* RGB.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FE0A703221E80C440080BF8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE0A703021E80BF10080BF8F /* MessageComposer.swift */,
+				FE0A702521E544800080BF8F /* Extensions */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */,
 				FE0A701E21E463920080BF8F /* VideosListController.swift in Sources */,
 				FE0A700921E45ECC0080BF8F /* AppDelegate.swift in Sources */,
+				FE0A703121E80BF10080BF8F /* MessageComposer.swift in Sources */,
 				FE0A702721E544A50080BF8F /* RGB.swift in Sources */,
 				FE0A702921E5540C0080BF8F /* Video.swift in Sources */,
 			);

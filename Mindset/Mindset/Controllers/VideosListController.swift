@@ -11,6 +11,8 @@ import UIKit
 
 class VideosListController: UIViewController {
     
+    let messageComposer = MessageComposer()
+    
     var collectionView: UICollectionView?
     let layout = UICollectionViewFlowLayout()
     
@@ -54,7 +56,45 @@ class VideosListController: UIViewController {
     }
     
     @objc func handleOptionsButton() {
-        print("options button pressed")
+        let activityController = UIAlertController()
+        
+        let contactCreaterButton = UIAlertAction(title: "Contact Creator 📩", style: .default, handler: { (action) -> Void in
+            if (self.messageComposer.canSendText()) {
+                
+                // Obtain a configured MFMessageComposeViewController
+                let messageComposeVC = self.messageComposer.configuredMessageComposeViewController()
+                //            presentedViewController(messageComposeVC, animated: true, completion: nil)
+                self.present(messageComposeVC, animated: true, completion: nil)
+            } else {
+                let errorAlert = UIAlertController(title: "Cannot Send Text Message", message: "Your device is not able to send text messages.", preferredStyle: .alert)
+                errorAlert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
+                self.present(errorAlert, animated: true, completion: nil)
+            }
+        })
+        
+        let shareApp = UIAlertAction(title: "Share App 👥", style: .default, handler: { (action) -> Void in
+            let appURL = "https://itunes.apple.com/us/app/be-the-mindset/id1175214273?mt=8"
+            
+                let textToShare = ["Check out the Mindset app! \(appURL)"]
+                let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+                activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+
+            
+             self.present(activityViewController, animated: true, completion: nil)
+        })
+        
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in
+            print("Cancel button tapped")
+        })
+        
+        activityController.addAction(contactCreaterButton)
+        activityController.addAction(shareApp)
+        activityController.addAction(cancelButton)
+        
+        // present the view controller
+        self.present(activityController, animated: true, completion: nil)
+        
+        
     }
     
     @objc func handleAddVideoButton() {
