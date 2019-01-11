@@ -28,6 +28,7 @@ class VideosListController: UIViewController {
         
         let model = videoModel()
         self.videos = model.getVideos()
+        
     }
     
     func setupCollectionView() {
@@ -43,6 +44,7 @@ class VideosListController: UIViewController {
     }
     
     func setupNavBar() {
+        UIApplication.shared.keyWindow?.tintColor = .black // so activity controller title buttons will be black
         self.title = "BTM"
         let navBar = navigationController?.navigationBar
         navBar?.isTranslucent = false
@@ -91,10 +93,7 @@ class VideosListController: UIViewController {
         activityController.addAction(shareApp)
         activityController.addAction(cancelButton)
         
-        // present the view controller
         self.present(activityController, animated: true, completion: nil)
-        
-        
     }
     
     @objc func handleAddVideoButton() {
