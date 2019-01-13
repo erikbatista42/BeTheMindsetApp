@@ -18,7 +18,7 @@ class VideosListController: UIViewController {
     
     let cellId = "cellId"
     
-    var videos:[Video] = [Video]()
+    var videos = [Video]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +105,21 @@ class VideosListController: UIViewController {
 
 
 extension VideosListController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(123)
+        guard let url = NSURL(string: videos[indexPath.row].url) else { return }
+        
+        print(url)
+        //        let player = AVPlayer(url: url as URL)
+        //        let playerViewController = AVPlayerViewController()
+        //        playerViewController.player = player
+        //        self.present(playerViewController, animated: true) {
+        //            playerViewController.player!.play()
+        //        }
+        
+        navigationController?.pushViewController(VideoViewController(), animated: true)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width

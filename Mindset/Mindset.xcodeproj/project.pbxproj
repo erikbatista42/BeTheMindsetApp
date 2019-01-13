@@ -17,6 +17,7 @@
 		FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */; };
 		FE0A702F21E6E8740080BF8F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */; };
 		FE0A703121E80BF10080BF8F /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0A703021E80BF10080BF8F /* MessageComposer.swift */; };
+		FE53791321EAA9DD00C00673 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53791221EAA9DD00C00673 /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVideoController.swift; sourceTree = "<group>"; };
 		FE0A702E21E6E8740080BF8F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE0A703021E80BF10080BF8F /* MessageComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
+		FE53791221EAA9DD00C00673 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				FE0A701D21E463910080BF8F /* VideosListController.swift */,
+				FE53791221EAA9DD00C00673 /* VideoViewController.swift */,
 				FE0A702C21E67EAE0080BF8F /* ViewVideoController.swift */,
 			);
 			path = Controllers;
@@ -207,6 +210,7 @@
 			files = (
 				FE0A702F21E6E8740080BF8F /* HomeCollectionViewCell.swift in Sources */,
 				FE0A702D21E67EAE0080BF8F /* ViewVideoController.swift in Sources */,
+				FE53791321EAA9DD00C00673 /* VideoViewController.swift in Sources */,
 				FE0A702B21E555730080BF8F /* VideoModel.swift in Sources */,
 				FE0A701E21E463920080BF8F /* VideosListController.swift in Sources */,
 				FE0A700921E45ECC0080BF8F /* AppDelegate.swift in Sources */,
