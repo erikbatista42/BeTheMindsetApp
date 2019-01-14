@@ -25,11 +25,11 @@ class VideoViewController: UIViewController {
         return label
     }()
     
-    lazy var webView: WKWebView = {
-        let wk = WKWebView()
+    lazy var webView: UIWebView = {
+        let wk = UIWebView()
         wk.backgroundColor = .blue
-        wk.load(URLRequest(url: URL(string: "https://m.youtube.com/results?search_query=motivational+videos")!))
         wk.translatesAutoresizingMaskIntoConstraints = false
+        wk.allowsInlineMediaPlayback = false
         return wk
     }()
     
@@ -45,17 +45,31 @@ class VideoViewController: UIViewController {
         titleLabel.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
                 view.addSubview(webView)
-//                let f = view.frame
-//                webView.frame = CGRect(x: f.origin.x, y: f.origin.y, width: f.size.width, height: f.size.height - tabBarController!.tabBar.frame.size.height)
                 webView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
                 webView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
                 webView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-                webView.heightAnchor.constraint(equalToConstant: 150).isActive = true
-                webView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150).isActive = true
+                webView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+//                webView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150).isActive = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.keyWindow?.tintColor = .white
+        let width = webView.frame.width
+        let height = webView.frame.height
+        
+        let heightStr = webView.frame.height
+        let widthStr = webView.frame.width
+        print("heigth str: ",heightStr)
+        print("width str: ", widthStr)
+        
+        let videoId = "uMJ5Zwfz1pU"
+        
+        let videoEmbedString = "<html><head><style type=\"text/css\">body {background-color: transparent;color: white;}</style></head><body style=\"margin:0\"><iframe frameBorder=\"0\" height=\"\(heightStr) \" width=\"\(widthStr) \" src=\"http://www.youtube.com/embed/\(videoId)?showinfo=0&modestbranding=1&frameborder=0&rel=0\"></iframe></body></html>"
+        
+        
+
+        webView.loadHTMLString(videoEmbedString, baseURL: nil)
+        
     }
     
     
