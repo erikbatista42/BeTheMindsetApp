@@ -29,16 +29,13 @@ class AddVideoController: UIViewController {
         tf.textColor = .white
         tf.borderStyle = .roundedRect
         tf.translatesAutoresizingMaskIntoConstraints = false
-        let newPosition = tf.beginningOfDocument
-        tf.selectedTextRange = tf.textRange(from: newPosition, to: newPosition)
-
+        tf.clearButtonMode = .whileEditing
+        tf.autocapitalizationType = .none
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 99, green: 110, blue: 100, alpha: 1),
             NSAttributedString.Key.font : UIFont(name: "Arial-ItalicMT", size: 14)! // Note the !
         ]
-
         tf.attributedPlaceholder = NSAttributedString(string: "https://www.youtube.com/watch?v=ZOy0YgUDwDg", attributes:attributes)
-
         return tf
     }()
     
