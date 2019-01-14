@@ -25,7 +25,6 @@ class AddVideoController: UIViewController {
     let urlTextField: UITextField = {
         let tf = UITextField()
         tf.backgroundColor = UIColor.rgb(red: 75, green: 79, blue: 99, alpha: 1)
-        tf.placeholder = "https://www.youtube.com/watch?v=ZOy0YgUDwDg"
         tf.textColor = .white
         tf.borderStyle = .roundedRect
         tf.translatesAutoresizingMaskIntoConstraints = false
@@ -33,19 +32,37 @@ class AddVideoController: UIViewController {
         tf.autocapitalizationType = .none
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 99, green: 110, blue: 100, alpha: 1),
-            NSAttributedString.Key.font : UIFont(name: "Arial-ItalicMT", size: 14)! // Note the !
+            NSAttributedString.Key.font : UIFont(name: "Arial-ItalicMT", size: 14)!
         ]
-        tf.attributedPlaceholder = NSAttributedString(string: "https://www.youtube.com/watch?v=ZOy0YgUDwDg", attributes:attributes)
+        tf.attributedPlaceholder = NSAttributedString(string: "e.g https://www.youtube.com/watch?v=ZOy0YgUDwDg", attributes:attributes)
         return tf
     }()
     
     let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "getting some positivity in the morning"
-        label.numberOfLines = 2
+        label.text = "Description"
+        label.backgroundColor = .black
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = UIColor.white
+        label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
         return label
+    }()
+    
+    let descriptionTextField: UITextField = {
+        let tf = UITextField()
+        tf.backgroundColor = UIColor.rgb(red: 75, green: 79, blue: 99, alpha: 1)
+        tf.textColor = .white
+        tf.borderStyle = .roundedRect
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.clearButtonMode = .whileEditing
+        tf.autocapitalizationType = .none
+        let attributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 99, green: 110, blue: 100, alpha: 1),
+            NSAttributedString.Key.font : UIFont(name: "Arial-ItalicMT", size: 14)!
+        ]
+        tf.attributedPlaceholder = NSAttributedString(string: "e.g. If it was easy everybody would do it", attributes:attributes)
+        return tf
     }()
     
     override func viewDidLoad() {
@@ -73,6 +90,17 @@ class AddVideoController: UIViewController {
         urlTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
         urlTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8).isActive = true
         urlTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        view.addSubview(descriptionLabel)
+        descriptionLabel.topAnchor.constraint(equalTo: urlTextField.bottomAnchor, constant: 8).isActive = true
+        descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
+        descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8).isActive = true
+        
+        view.addSubview(descriptionTextField)
+        descriptionTextField.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 8).isActive = true
+        descriptionTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
+        descriptionTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8).isActive = true
+        descriptionTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
     }
     
