@@ -99,8 +99,8 @@ class VideosListController: UIViewController {
     }
     
     @objc func handleAddVideoButton() {
-        print("add video button pressed")
-        navigationController?.present(AddVideoController(), animated: true)
+        let addVideoController = UINavigationController(rootViewController: AddVideoController())
+        navigationController?.present(addVideoController, animated: true)
     }
     
     
