@@ -19,7 +19,9 @@ class VideosListController: UIViewController {
     let cellId = "cellId"
     
     var videos = [Video]()
-    
+    override func viewDidAppear(_ animated: Bool) {
+        UIApplication.shared.keyWindow?.tintColor = .black
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

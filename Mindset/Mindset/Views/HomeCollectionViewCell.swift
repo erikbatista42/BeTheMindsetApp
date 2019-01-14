@@ -13,8 +13,9 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     let thumbnail: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "sampleImg.png")
+//        iv.image = UIImage(named: "sampleImg.png")
         iv.contentMode = .scaleAspectFit
+        iv.backgroundColor = .black
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
