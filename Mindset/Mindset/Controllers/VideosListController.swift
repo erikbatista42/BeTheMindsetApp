@@ -108,16 +108,16 @@ extension VideosListController: UICollectionViewDelegateFlowLayout, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(123)
-        guard let url = NSURL(string: videos[indexPath.row].url) else { return }
+//        guard let url = NSURL(string: videos[indexPath.row].url) else { return }
         
-        print(url)
+//        print(url)
         //        let player = AVPlayer(url: url as URL)
         //        let playerViewController = AVPlayerViewController()
         //        playerViewController.player = player
         //        self.present(playerViewController, animated: true) {
         //            playerViewController.player!.play()
         //        }
-        
+        VideoViewController.passedVidId = videos[indexPath.row].id
         navigationController?.pushViewController(VideoViewController(), animated: true)
     }
     

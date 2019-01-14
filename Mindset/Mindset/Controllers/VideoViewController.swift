@@ -52,6 +52,9 @@ class VideoViewController: UIViewController {
 //                webView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150).isActive = true
     }
     
+    let videos = [Video]()
+    static var passedVidId: String?
+    
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.keyWindow?.tintColor = .white
         let width = webView.frame.width
@@ -63,10 +66,8 @@ class VideoViewController: UIViewController {
         print("width str: ", widthStr)
         
         let videoId = "uMJ5Zwfz1pU"
-        
-        let videoEmbedString = "<html><head><style type=\"text/css\">body {background-color: transparent;color: white;}</style></head><body style=\"margin:0\"><iframe frameBorder=\"0\" height=\"\(heightStr) \" width=\"\(widthStr) \" src=\"http://www.youtube.com/embed/\(videoId)?showinfo=0&modestbranding=1&frameborder=0&rel=0\"></iframe></body></html>"
-        
-        
+        print("passed ID: ", VideoViewController.passedVidId)
+        let videoEmbedString = "<html><head><style type=\"text/css\">body {background-color: transparent;color: white;}</style></head><body style=\"margin:0\"><iframe frameBorder=\"0\" height=\"\(heightStr) \" width=\"\(widthStr) \" src=\"http://www.youtube.com/embed/\(VideoViewController.passedVidId ?? "")?showinfo=0&modestbranding=1&frameborder=0&rel=0\"></iframe></body></html>"
 
         webView.loadHTMLString(videoEmbedString, baseURL: nil)
         
