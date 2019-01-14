@@ -54,6 +54,8 @@ class VideoViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .black
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "share_icon.png")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleShareButton))
+        
         view.addSubview(titleLabel)
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
@@ -73,6 +75,10 @@ class VideoViewController: UIViewController {
         descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         descriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+    }
+    
+    @objc func handleShareButton() {
+        print("sharing btn tapped")
     }
     
     let videos = [Video]()
