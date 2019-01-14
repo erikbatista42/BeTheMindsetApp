@@ -12,9 +12,13 @@ import WebKit
 
 class VideoViewController: UIViewController {
     
+    static var passedVidId: String?
+    static var passedTitle: String?
+    static var passedDescription: String?
+    
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Sample label this might sometimes turn out to be a really long label you know what i mean?"
+        label.text = VideoViewController.passedTitle
         label.backgroundColor = .white
         label.font = UIFont.systemFont(ofSize: 16)
         label.font = UIFont.boldSystemFont(ofSize: 20)
@@ -53,21 +57,15 @@ class VideoViewController: UIViewController {
     }
     
     let videos = [Video]()
-    static var passedVidId: String?
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.keyWindow?.tintColor = .white
         let width = webView.frame.width
         let height = webView.frame.height
         
-        let heightStr = webView.frame.height
-        let widthStr = webView.frame.width
-        print("heigth str: ",heightStr)
-        print("width str: ", widthStr)
-        
-        let videoId = "uMJ5Zwfz1pU"
-        print("passed ID: ", VideoViewController.passedVidId)
-        let videoEmbedString = "<html><head><style type=\"text/css\">body {background-color: transparent;color: white;}</style></head><body style=\"margin:0\"><iframe frameBorder=\"0\" height=\"\(heightStr) \" width=\"\(widthStr) \" src=\"http://www.youtube.com/embed/\(VideoViewController.passedVidId ?? "")?showinfo=0&modestbranding=1&frameborder=0&rel=0\"></iframe></body></html>"
+        let videoEmbedString = "<html><head><style type=\"text/css\">body {background-color: transparent;color: white;}</style></head><body style=\"margin:0\"><iframe frameBorder=\"0\" height=\"\(height) \" width=\"\(width) \" src=\"http://www.youtube.com/embed/\(VideoViewController.passedVidId ?? "")?showinfo=0&modestbranding=1&frameborder=0&rel=0\"></iframe></body></html>"
 
         webView.loadHTMLString(videoEmbedString, baseURL: nil)
         
