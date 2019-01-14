@@ -20,8 +20,8 @@ class VideoViewController: UIViewController {
         let label = UILabel()
         label.text = VideoViewController.passedTitle
         label.backgroundColor = .black
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 40)
         label.textColor = UIColor.white
         label.numberOfLines = 3
         label.textAlignment = .center
@@ -59,7 +59,7 @@ class VideoViewController: UIViewController {
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8).isActive = true
         
-        titleLabel.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 125).isActive = true
         
         view.addSubview(webView)
         webView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
