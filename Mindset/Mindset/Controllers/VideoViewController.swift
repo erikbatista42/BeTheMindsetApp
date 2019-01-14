@@ -19,10 +19,10 @@ class VideoViewController: UIViewController {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = VideoViewController.passedTitle
-        label.backgroundColor = .white
+        label.backgroundColor = .black
         label.font = UIFont.systemFont(ofSize: 16)
         label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.textColor = UIColor.gray
+        label.textColor = UIColor.white
         label.numberOfLines = 3
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -31,15 +31,28 @@ class VideoViewController: UIViewController {
     
     lazy var webView: UIWebView = {
         let wk = UIWebView()
-        wk.backgroundColor = .blue
+        wk.backgroundColor = .black
         wk.translatesAutoresizingMaskIntoConstraints = false
         wk.allowsInlineMediaPlayback = false
         return wk
     }()
     
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.text = VideoViewController.passedDescription
+        label.backgroundColor = .black
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor = UIColor.white
+        label.numberOfLines = 3
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .black
         
         view.addSubview(titleLabel)
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
@@ -48,12 +61,18 @@ class VideoViewController: UIViewController {
         
         titleLabel.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
-                view.addSubview(webView)
-                webView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
-                webView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
-                webView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-                webView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        view.addSubview(webView)
+        webView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        webView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+        webView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+        webView.heightAnchor.constraint(equalToConstant: 300).isActive = true
 //                webView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150).isActive = true
+        
+        view.addSubview(descriptionLabel)
+        descriptionLabel.topAnchor.constraint(equalTo: webView.bottomAnchor, constant: 0).isActive = true
+        descriptionLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+        descriptionLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+        descriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
     
     let videos = [Video]()
