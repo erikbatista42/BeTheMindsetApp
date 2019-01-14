@@ -17,8 +17,7 @@ class videoModel: NSObject {
         var videoOne = Video()
         videoOne.id = "ZOy0YgUDwDg"
         videoOne.title = "Vision"
-        //        videoOne.url = "If you quit, no day will ever be your day"
-        videoOne.description = "https://youtu.be/ZOy0YgUDwDg"
+        videoOne.description = "If you quit, no day will ever be your day"
         videos.append(videoOne)
         
         var videoTwo = Video()
