@@ -60,7 +60,6 @@ class VideoViewController: UIViewController {
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8).isActive = true
-        
         titleLabel.heightAnchor.constraint(equalToConstant: 125).isActive = true
         
         view.addSubview(webView)
@@ -68,7 +67,6 @@ class VideoViewController: UIViewController {
         webView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         webView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         webView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-//                webView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150).isActive = true
         
         view.addSubview(descriptionLabel)
         descriptionLabel.topAnchor.constraint(equalTo: webView.bottomAnchor, constant: 0).isActive = true
@@ -77,8 +75,14 @@ class VideoViewController: UIViewController {
         descriptionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
     }
     
+    static var videoURL: String?
+    
     @objc func handleShareButton() {
-        print("sharing btn tapped")
+        UIApplication.shared.keyWindow?.tintColor = .black
+        
+        let items = [URL(string: VideoViewController.videoURL ?? "")]
+        let activityViewController = UIActivityViewController(activityItems: items as [Any], applicationActivities: nil)
+        present(activityViewController, animated: true)
     }
     
     let videos = [Video]()

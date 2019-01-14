@@ -113,6 +113,7 @@ extension VideosListController: UICollectionViewDelegateFlowLayout, UICollection
         VideoViewController.passedVidId = videos[indexPath.row].id
         VideoViewController.passedTitle = videos[indexPath.row].title
         VideoViewController.passedDescription = videos[indexPath.row].description
+        VideoViewController.videoURL = videos[indexPath.row].url
         navigationController?.pushViewController(VideoViewController(), animated: true)
     }
     
