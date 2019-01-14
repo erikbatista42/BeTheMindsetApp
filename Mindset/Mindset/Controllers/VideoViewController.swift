@@ -79,9 +79,8 @@ class VideoViewController: UIViewController {
     
     @objc func handleShareButton() {
         UIApplication.shared.keyWindow?.tintColor = .black
-        
-        let items = [URL(string: VideoViewController.videoURL ?? "")]
-        let activityViewController = UIActivityViewController(activityItems: items as [Any], applicationActivities: nil)
+        let shareLink = "Hey! Check out this video I found in the Be the Mindset App: \(VideoViewController.videoURL ?? "")"
+        let activityViewController = UIActivityViewController(activityItems: [shareLink], applicationActivities: nil)
         present(activityViewController, animated: true)
     }
     
