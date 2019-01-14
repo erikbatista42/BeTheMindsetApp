@@ -68,18 +68,22 @@ class AddVideoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Add Video"
-        
-        let navBar = navigationController?.navigationBar
-        navBar?.tintColor = .white
-        navBar?.isTranslucent = false
-        navBar?.barStyle = UIBarStyle.black
-        
         view.backgroundColor = .black
+        setupNavBar()
+        setupSubviews()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .done, target: self, action: #selector(handleCancelButton))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(handleDoneButton))
+    }
+ 
+    @objc func handleCancelButton() {
+        print("cancel")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func handleDoneButton() {
         
+    }
+    
+    func setupSubviews() {
         view.addSubview(youtubeURLLabel)
         youtubeURLLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
         youtubeURLLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
@@ -101,17 +105,16 @@ class AddVideoController: UIViewController {
         descriptionTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8).isActive = true
         descriptionTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8).isActive = true
         descriptionTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
     }
     
-    @objc func handleCancelButton() {
-        print("cancel")
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @objc func handleDoneButton() {
-        print("Done")
-        navigationController?.popViewController(animated: true)
+    func setupNavBar() {
+        self.title = "Add Video"
+        let navBar = navigationController?.navigationBar
+        navBar?.tintColor = .white
+        navBar?.isTranslucent = false
+        navBar?.barStyle = UIBarStyle.black
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .done, target: self, action: #selector(handleCancelButton))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(handleDoneButton))
     }
     
 }
