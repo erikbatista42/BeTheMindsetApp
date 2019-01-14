@@ -106,7 +106,7 @@ class AddVideoController: UIViewController {
     
     @objc func handleCancelButton() {
         print("cancel")
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     @objc func handleDoneButton() {
