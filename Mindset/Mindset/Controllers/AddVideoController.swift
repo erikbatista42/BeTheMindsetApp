@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-class ViewVideoController: UINavigationController {
+class AddVideoController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.tintColor = .white
+        view.backgroundColor = .blue
         self.title = "Add Video"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(handleDoneButton))
@@ -23,4 +24,5 @@ class ViewVideoController: UINavigationController {
     @objc func handleDoneButton() {
         print("handle button pressed")
     }
+    
 }
