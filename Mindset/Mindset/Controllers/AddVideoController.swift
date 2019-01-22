@@ -75,12 +75,25 @@ class AddVideoController: UIViewController {
     }
  
     @objc func handleCancelButton() {
-        print("cancel")
         dismiss(animated: true, completion: nil)
     }
     
+    func isYoutube(link: String) -> Bool {
+        
+        let youtubeRegex = "(http(s)?:\\/\\/)?(www\\.|m\\.)?youtu(be\\.com|\\.be)(\\/watch\\?([&=a-z]{0,})(v=[\\d\\w]{1,}).+|\\/[\\d\\w]{1,})"
+        
+        let youtubeCheckResult = NSPredicate(format: "SELF MATCHES %@", youtubeRegex)
+        return youtubeCheckResult.evaluate(with: link)
+    }
+    
+    
     @objc func handleDoneButton() {
         
+        if isYoutube(link: urlTextField.text ?? "") && descriptionTextField.text != "" {
+            print("valid YT URL")
+        } else {
+            print("invalid link")
+        }
     }
     
     func setupSubviews() {
