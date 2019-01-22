@@ -1,8 +1,8 @@
 ## Be the Mindset iOS App
-This app lets you read short interesting stories based on people's experiences / moments or snapshot in their life
+Mindset contains a set of videos that will that will motivate you to take action and commitment!
 
 ## Motivation
-A lot of times is hard to find good stories to read that don't take much of your time. Instead of surfing the web for really short articles to read Dote has short interesting articles.
+Since I watch a lot of motivational videos, they are a handful of favorite videos that I rewatch on Youtube. Instead of going to Youtube everytime I want to watch a motivational video, why not have an app that has a list of my favorite videos? So I won't have to be going to Youtube and searching for them everytime.
 
 ## Code style
 
