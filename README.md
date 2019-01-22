@@ -9,9 +9,9 @@ Since I watch a lot of motivational videos, they are a handful of favorite video
 [![swift-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/Home.png){:class="img-responsive"}
-![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/VideoView.png){:class="img-responsive"}
-![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/AddVideo.png){:class="img-responsive"}
+![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/Home.png)
+![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/VideoView.png)
+![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/AddVideo.png)
 
 ## Tech/framework used
 <b>Built with</b>
