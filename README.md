@@ -10,8 +10,8 @@ Since I watch a lot of motivational videos, they are a handful of favorite video
  
 ## Screenshots
 ![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/Home.png)
-![alt text](https://github.com/erikbatista42/Dote/blob/master/Screenshots/VideoView.png)
-![alt text](https://github.com/erikbatista42/Dote/blob/master/Screenshots/AddVideo.png)
+![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/VideoView.png)
+![alt text](https://github.com/erikbatista42/BeTheMindsetApp/blob/master/Screenshots/AddVideo.png)
 
 ## Tech/framework used
 <b>Built with</b>
